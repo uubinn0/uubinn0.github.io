@@ -73,7 +73,7 @@
         <div class="about-image">
           <img
             src="assets/images/profile.jpg"
-            alt="정찬호 프로필 사진"
+            alt="나유빈 프로필 사진"
             class="profile-img"
           />
         </div>
@@ -83,8 +83,8 @@
               Python 개발 환경에서 데이터 수집부터 DB 설계, 데이터 전처리 및 적재와 추천 시스템 개발 과정을 경험한 데이터 분석가 나유빈입니다. 
             </p>
             <br>
-              데이터와 상황에 맞춘 하이브리드 추천 기법을 설계 및 구현하며 데이터 기반으로 사용자의 경험을 향상시키는 방법을 지속적으로 탐구해 왔습니다. </br>
-              데이터 너머의 사용자를 이해하고, 더 정밀하고 다양한 추천을 제공함으로써 사용자에게 새로운 경험을 제공하고 선택의 폭을 넓히는 서비스를 만드는 것을 목표로 합니다.
+              데이터와 상황에 맞춘 하이브리드 추천 기법을 설계 및 구현하며 데이터 기반으로 <br> 사용자의 경험을 향상시키는 방법을 지속적으로 탐구해 왔습니다. </br>
+              데이터 너머의 사용자를 이해하고, 더 정밀하고 다양한 추천을 제공함으로써 <br> 사용자에게 새로운 경험을 제공하고 선택의 폭을 넓히는 서비스를 만드는 것을 <br> 목표로 합니다.
             </p>
           </div>
           <div class="about-info">
@@ -122,17 +122,19 @@
           <div class="project-card">
             <div class="project-header">
               <h3 class="project-title">
-                MeetGenius
+                와인다이닝
                 <a href="https://github.com/uubinn0/WineDining" target="_blank" class="github-link" title="GitHub 바로가기">
                   <i class="fab fa-github"></i>
                 </a>
               </h3>
-              <span class="project-pill">25.02.24 ~ 25.04.11 :: 5인 빅데이터 추천 프로젝트</span>
+              <span class="project-pill">5인 빅데이터 추천 프로젝트</span>
+              <!-- <span class="project-pill">:: 25.02.24 ~ 25.04.11 :: </span> -->
             </div>
+            <!-- 수정해야 하는 부분 -->
             <div class="project-content">
               <div class="project-img-slider">
-                <img src="assets/images/MG_FRONT.png" alt="MeetGenius 대표 이미지" class="slider-img active" />
-                <img src="assets/images/MG.png" alt="MeetGenius 아키텍처 이미지" class="slider-img" />
+                <img src="assets/images/WD_FRONT.png" alt="WineDining 대표 이미지" class="slider-img active" />
+                <img src="assets/images/WD_ARCHI.png" alt="WineDining 아키텍처 이미지" class="slider-img" />
                 <div class="slider-dots">
                   <span class="slider-dot active"></span>
                   <span class="slider-dot"></span>
@@ -140,10 +142,14 @@
               </div>
               <div class="project-info">
                 <div class="project-summary">
-                  와인 입문자를 위한 맞춤형 와인 추천 서비스
+                  와인 입문자들을 위한 개인화된 와인 추천 서비스
                 </div>
                 <div class="project-role">
-                  <strong>내 역할:</strong> 팀원 / Data
+                  <strong>프로젝트 기간 :</strong> 2025. 02. 24 ~ 2025. 04. 11
+                <!-- </div>
+                <div class="project-role"> -->
+                </br>
+                  <strong>내 역할 :</strong> 팀원 / Data
                 </div>
                 <div class="project-tech">
                   <h4>기술 스택</h4>
@@ -156,52 +162,70 @@
                       <img src="assets/images/icons/postgresql.svg" alt="PostgreSQL" />
                       <span>PostgreSQL</span>
                     </div>
+                    <div class="tech-item">
+                      <img src="assets/images/icons/docker.svg" alt="Docker" />
+                      <span>Docker</span>
+                    </div>
                   </div>
                 </div>
                 <div class="project-desc">
                   <h4>핵심 기여</h4>
                   <ul>
                     <li>
-                      <strong>컨테이너화 및 하이브리드 환경 구성</strong>:
-                      온디바이스(Jetson)와 웹(PC) 각각의 서비스 환경을 컨테이너로 분리하여 관리하고,
-                      Docker 네트워크를 통해 두 환경 간 통신을 구현
+                      <strong>와인 데이터베이스 구축</strong>: 
+                      BeautifulSoup을 활용하여 와인 정보를 수집하고 데이터 클리닝 및 전처리하여 총 3만 7천 개의 와인 데이터베이스 구축
                     </li>
                     <li>
-                      <strong>분산 환경 표준화 및 신속 배포</strong>:
-                      Jetson(온디바이스)와 PC(웹) 각각에서 docker-compose로 여러 서비스를 한 번에 일관되게 실행, 환경 재현 및 확장 용이
+                      <strong>와인병 이미지 픽셀 변환 자동화</strong>: 
+                      Selenium을 활용하여 웹 페이지에서 동적으로 와인병 이미지 픽셀 변환 작업 자동화
                     </li>
-                    <li><strong>환경 설정 표준화</strong>: .env 파일로 환경 변수 및 설정 분리, 개발 환경 일관성 유지</li>
+                    <li>
+                      <strong>개인화된 추천 시스템 설계 및 개발</strong>: 
+                      와인 벡터, 사용자 로그 데이터 등을 활용해 콘텐츠 기반 필터링 기법의 추천 시스템 설계 및 개발
+                    </li>
+                    <li>
+                      <strong>클러스터링을 통한 추천 다양화 및 추천 속도 개선</strong>:
+                      K-means 클러스터링을 통해 37개의 와인 그룹 생성, 
+                      사용자 평가 데이터 중 가장 최신의 최고점 와인이 속한 와인 그룹에서 코사인 유사도 기반의 와인 추천 개발
+                    </li>
+                    <li>
+                      <strong>중계 테이블 설계</strong>:
+                      와인과 페어링 음식 간 중계 테이블 설계를 통한 양방향 데이터 조회 고려 및 속도 향상
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-          <!-- 야금야금 카드 -->
+          <!-- 챌린고비 카드 -->
           <div class="project-card">
             <div class="project-header">
               <h3 class="project-title">
-                야금야금
-                <a href="https://github.com/chano275/yagum_yagum" target="_blank" class="github-link" title="GitHub 바로가기">
+                챌린고비
+                <a href="https://github.com/uubinn0/Challengobi" target="_blank" class="github-link" title="GitHub 바로가기">
                   <i class="fab fa-github"></i>
                 </a>
               </h3>
-              <span class="project-pill">25.02 ~ 25.04, 6인 핀테크 프로젝트</span>
+              <span class="project-pill">6인 웹·앱 프로젝트</span>
             </div>
+            <!-- 수정해야 하는 부분 -->
             <div class="project-content">
               <div class="project-img-slider">
-                <img src="assets/images/YG_FRONT.png" alt="야금야금 대표 이미지" class="slider-img active" />
-                <img src="assets/images/YY.png" alt="야금야금 아키텍처 이미지" class="slider-img" />
+                <img src="assets/images/CG_FRONT.png" alt="챌린고비 대표 이미지" class="slider-img active" />
+                <!-- <img src="assets/images/YY.png" alt="챌린고비 아키텍처 이미지" class="slider-img" /> -->
                 <div class="slider-dots">
                   <span class="slider-dot active"></span>
-                  <span class="slider-dot"></span>
+                  <!-- <span class="slider-dot"></span> -->
                 </div>
               </div>
               <div class="project-info">
                 <div class="project-summary">
-                  야구 팬들을 위한 자동 적금 서비스
+                  올바른 절약을 위한 소비인증 챌린지 SNS
                 </div>
                 <div class="project-role">
-                  <strong>내 역할:</strong> PM / DevOps
+                  <strong>프로젝트 기간 :</strong> 2025. 01. 13 ~ 2025. 02. 21
+                </br>
+                  <strong>내 역할 :</strong> 팀원 / BackEnd
                 </div>
                 <div class="project-tech">
                   <h4>기술 스택</h4>
@@ -211,49 +235,27 @@
                       <span>FastAPI</span>
                     </div>
                     <div class="tech-item">
-                      <img src="assets/images/icons/react.svg" alt="React Native" />
-                      <span>React Native</span>
+                      <img src="assets/images/icons/django.svg" alt="Django" />
+                      <span>Django</span>
                     </div>
                     <div class="tech-item">
                       <img src="assets/images/icons/mariadb.svg" alt="MariaDB" />
                       <span>MariaDB</span>
                     </div>
                     <div class="tech-item">
-                      <img src="assets/images/icons/nginx.svg" alt="Nginx" />
-                      <span>Nginx</span>
-                    </div>
-                    <div class="tech-item">
-                      <img src="assets/images/icons/jenkins.svg" alt="Jenkins" />
-                      <span>Jenkins</span>
-                    </div>
-                    <div class="tech-item">
-                      <img src="assets/images/icons/terraform.svg" alt="Terraform" />
-                      <span>Terraform</span>
-                    </div>
-                    <div class="tech-item">
-                      <img src="assets/images/icons/aws.svg" alt="AWS" />
-                      <span>AWS</span>
-                    </div>
-                    <div class="tech-item">
-                      <img src="assets/images/icons/k6.svg" alt="k6" />
-                      <span>k6</span>
-                    </div>
-                    <div class="tech-item">
-                      <img src="assets/images/icons/gcp.svg" alt="GCP" />
-                      <span>GCP</span>
+                      <img src="assets/images/icons/docker.svg" alt="Docker" />
+                      <span>Docker</span>
                     </div>
                   </div>
                 </div>
                 <div class="project-desc">
-                  <h4>DevOps 핵심 기여</h4>
+                  <h4>핵심 기여</h4>
                   <ul>
-                    <li><strong>컨테이너 기반 서비스 구성</strong>: 모든 주요 서비스(FastAPI, React, Jenkins 등)를 Docker 컨테이너로 분리 관리</li>
-                    <li><strong>멀티 클라우드 아키텍처</strong>: AWS EC2(웹 서버) + GCP GPU 서버(AI 서버)로 인프라 이원화</li>
-                    <li><strong>IaC 도입</strong>: Terraform으로 GCP GPU 서버 기본 배포 구성</li>
-                    <li><strong>CI/CD 파이프라인 및 자동화 배포</strong>: GitLab webhook과 Jenkins를 연동하여, 코드 변경 시 Docker 이미지 빌드 및 EC2에 자동 배포되는 파이프라인 구축</li>
-                    <li><strong>성능 모니터링 및 최적화</strong>: k6를 통한 부하 테스트로 Redis 도입 결정, 평균 대기 시간 11초 → 개선</li>
-                    <li><strong>스토리지 연동</strong>: AWS S3를 활용한 정적 자원 관리 및 백업 구성</li>
-                    <li><strong>개발 환경 표준화</strong>: docker-compose.override.yml 및 .env 파일(Jenkins Credential 연동)로 환경 변수 관리, 개발·운영 환경 일관성 유지</li>
+                    <li><strong>OCR을 통한 출금 내역 추출 및 챌린지 인증 내역 자동화</strong>: PaddleOCR을 활용해 통장 입출금 이미지의 내역을 추출하고 챌린지 인증의 편의성 개선</li>
+                    <li><strong>ERD 설계</strong>: 전체 데이터베이스 구조 설계 및 더미 데이터 생성</li>
+                    <li><strong>반정규화를 통한 데이터 조회 속도 향상</strong>: 사용자 포인트 컬럼 반정규화를 통해 데이터 조회 속도 향상</li>
+                    <li><strong>챌린지 검색/필터링 기능 개발</strong>: 챌린지 카테고리별 필터링 및 키워드 기반 검색 기능 개발</li>
+                    <li><strong>프로젝트 일정 관리</strong>: 개인 면담 및 업무 세분화를 통해 기능 개발 속도 향상</li>
                   </ul>
                 </div>
               </div>
@@ -264,12 +266,13 @@
             <div class="project-header">
               <h3 class="project-title">
                 여봐라
-                <a href="https://github.com/chano275/yeowbara" target="_blank" class="github-link" title="GitHub 바로가기">
+                <a href="https://github.com/uubinn0/Yeowbara" target="_blank" class="github-link" title="GitHub 바로가기">
                   <i class="fab fa-github"></i>
                 </a>
               </h3>
-              <span class="project-pill">25.04 ~ 25.05, 3인 웹·AI 프로젝트</span>
+              <span class="project-pill">3인 웹·AI 프로젝트</span>
             </div>
+            <!-- 수정해야 하는 부분 -->
             <div class="project-content">
               <div class="project-img-slider">
                 <img src="assets/images/YB_FRONT.png" alt="여봐라 대표 이미지" class="slider-img active" />
@@ -286,34 +289,36 @@
                   쿠버네티스 기반 개인화된 MCP 환경으로 채팅 기반 업무 자동화 제공하는 AI 어시스턴트 플랫폼
                 </div>
                 <div class="project-role">
-                  <strong>내 역할:</strong> 팀장 / PM / DevOps
+                  <strong>프로젝트 기간 :</strong> 2025. 04. 14 ~ 2025. 05. 22
+                </br>
+                  <strong>내 역할:</strong> 팀원 / FrontEnd
                 </div>
                 <div class="project-tech">
                   <h4>기술 스택</h4>
                   <div class="tech-stack">
                     <div class="tech-item">
-                      <img src="assets/images/icons/fastapi.svg" alt="FastAPI" />
-                      <span>FastAPI</span>
-                    </div>
-                    <div class="tech-item">
                       <img src="assets/images/icons/react.svg" alt="React" />
                       <span>React</span>
                     </div>
                     <div class="tech-item">
-                      <img src="assets/images/icons/kubernetes.svg" alt="Kubernetes" />
-                      <span>Kubernetes</span>
+                      <img src="assets/images/icons/typeScript.svg" alt="TypeScript" />
+                      <span>TypeScript</span>
                     </div>
                     <div class="tech-item">
-                      <img src="assets/images/icons/jenkins.svg" alt="Jenkins" />
-                      <span>Jenkins</span>
+                      <img src="assets/images/icons/tailwindCSS.svg" alt="TailwindCSS" />
+                      <span>TailwindCSS</span>
                     </div>
                     <div class="tech-item">
-                      <img src="assets/images/icons/nginx.svg" alt="Nginx" />
-                      <span>Nginx</span>
+                      <img src="assets/images/icons/vite.svg" alt="Vite" />
+                      <span>Vite</span>
                     </div>
                     <div class="tech-item">
-                      <img src="assets/images/icons/aws.svg" alt="AWS" />
-                      <span>AWS</span>
+                      <img src="assets/images/icons/ESLint.svg" alt="ESLint" />
+                      <span>ESLint</span>
+                    </div>
+                    <div class="tech-item">
+                      <img src="assets/images/icons/npm.svg" alt="npm" />
+                      <span>npm</span>
                     </div>
                     <div class="tech-item">
                       <img src="assets/images/icons/docker.svg" alt="Docker" />
@@ -322,13 +327,11 @@
                   </div>
                 </div>
                 <div class="project-desc">
-                  <h4>DevOps 핵심 기여</h4>
+                  <h4>핵심 기여</h4>
                   <ul>
-                    <li><strong>Kubernetes 실전 도입</strong>: AWS EC2에서 Kubernetes(K8s) 첫 실전 적용, 컨트롤 플레인과 워커 노드를 단일 EC2에서 효율적으로 구성하고, 이벤트 기반 사용자별 FastAPI AI Agent Pod의 자동 스케일링 구현</li>
-                    <li><strong>CI/CD 파이프라인 확장</strong>: Jenkins + GitLab + Docker 기반 파이프라인을 Kubernetes로 확장</li>
-                    <li><strong>컨테이너 레지스트리 활용</strong>: Docker Hub를 통한 이미지 관리 및 자동 배포</li>
-                    <li><strong>보안 및 인프라 구성</strong>: Nginx 리버스 프록시, HTTPS 인증서, 도메인 연동으로 보안 강화</li>
-                    <li><strong>개발 환경 표준화</strong>: docker-compose.override.yml 및 .env 파일(Jenkins Credential 연동)로 환경 변수 관리, 개발·운영 환경 일관성 유지</li>
+                    <li><strong>전체 페이지 UI/UX 설계</strong>: 사용자에게 익숙한 UI를 제공해 UX를 향상시키고자 대규모 사용자를 보유하고 있는 ChatGPT UI와 유사하도록 설계</li>
+                    <li><strong>MCP 서비스 설정 토글 및 UI 디자인</strong>: 토글을 통해 사용자가 사용하고자 하는 MCP를 설정할 수 있도록 하고 선택 여부 및 환경변수 입력 상태에 따라 UI 상태를 다르게 해 사용자가 알아보기 쉽도록 UI 설계</li>
+                    <li><strong>채팅 세션 생성 로직 개발</strong>: 빈 세션 생성을 방지하고자 채팅 내역 입력 후 전송 버튼 클릭 시 세션 생성되도록 개발</li>
                   </ul>
                 </div>
               </div>
@@ -403,8 +406,110 @@
   <section id="skills" class="section skills">
     <div class="container">
       <h2>🛠️ Skills & Tools</h2>
-      
-      <!-- DevOps -->
+
+      <!-- Data -->
+      <div class="skills-category">
+        <h3>Data</h3>
+        <div class="skills-grid">
+          <div class="skill">
+            <img src="assets/images/icons/python.svg" alt="Python" />
+            <span>Python</span>
+            <p class="skill-desc">데이터 수집 및 전처리, </br>
+              분석, 시각화 및 추천 시스템 개발</p>
+            <div class="skill-bar"><div class="skill-level" style="width:70%;"></div></div>
+          </div>
+          <!-- <div class="skill">
+            <img src="assets/images/icons/beautifulsoup.svg" alt="BS4" />
+            <span>BeautifulSoup</span>
+            <p class="skill-desc">정적 웹 사이트 데이터 수집</p>
+            <div class="skill-bar"><div class="skill-level" style="width:70%;"></div></div>
+          </div>
+          <div class="skill">
+            <img src="assets/images/icons/selenium.svg" alt="Selenium" />
+            <span>Selenium</span>
+            <p class="skill-desc">동적 웹 사이트 데이터 수집</p>
+            <div class="skill-bar"><div class="skill-level" style="width:70%;"></div></div>
+          </div> -->
+          <div class="skill">
+            <img src="assets/images/icons/scikit-learn.svg" alt="scikit-learn" />
+            <span>scikit-learn</span>
+            <p class="skill-desc">모델링 구현</p>
+            <div class="skill-bar"><div class="skill-level" style="width:70%;"></div></div>
+          </div>
+          <div class="skill">
+            <img src="assets/images/icons/spark.svg" alt="Spark" />
+            <span>Spark</span>
+            <p class="skill-desc">대용량 데이터 파이프라인 설계 및 전처리</p>
+            <div class="skill-bar"><div class="skill-level" style="width:70%;"></div></div>
+          </div>
+          <div class="skill">
+            <img src="assets/images/icons/tableau.svg" alt="Tableau" />
+            <span>Tableau</span>
+            <p class="skill-desc">데이터 분석 시각화 및 <br> 대시보드 개발</p>
+            <div class="skill-bar"><div class="skill-level" style="width:70%;"></div></div>
+          </div>
+          <!-- <div class="skill">
+            <img src="assets/images/icons/terraform.svg" alt="Terraform" />
+            <span>Terraform</span>
+            <p class="skill-desc">IaC를 통한 인프라 자동화</p>
+            <div class="skill-bar"><div class="skill-level" style="width:30%;"></div></div>
+          </div>
+          <div class="skill">
+            <img src="assets/images/icons/k6.svg" alt="k6" />
+            <span>k6</span>
+            <p class="skill-desc">성능 테스트 및 모니터링</p>
+            <div class="skill-bar"><div class="skill-level" style="width:20%;"></div></div>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- Database -->
+      <div class="skills-category">
+        <h3>Database</h3>
+        <div class="skills-grid">
+          <div class="skill">
+            <img src="assets/images/icons/mysql.svg" alt="MySQL" />
+            <span>MySQL</span>
+            <p class="skill-desc">데이터베이스 구축 및 조회</p>
+            <div class="skill-bar"><div class="skill-level" style="width:40%;"></div></div>
+          </div>
+          <div class="skill">
+            <img src="assets/images/icons/mariadb.svg" alt="MariaDB" />
+            <span>MariaDB</span>
+            <p class="skill-desc">데이터베이스 구축 및 조회</br>
+              </p>
+            <div class="skill-bar"><div class="skill-level" style="width:70%;"></div></div>
+          </div>
+          <div class="skill">
+            <img src="assets/images/icons/postgresql.svg" alt="PostgreSQL" />
+            <span>PostgreSQL</span>
+            <p class="skill-desc">데이터베이스 구축 및 조회</br>
+              pgvector를 통한 벡터 데이터 구축 및 유사도 기반 추천</p>
+            <div class="skill-bar"><div class="skill-level" style="width:70%;"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Web Development -->
+      <div class="skills-category">
+        <h3>Web Development</h3>
+        <div class="skills-grid">
+          <div class="skill">
+            <img src="assets/images/icons/fastapi.svg" alt="FastAPI" />
+            <span>FastAPI</span>
+            <p class="skill-desc">Python 기반 BE 설계</p>
+            <div class="skill-bar"><div class="skill-level" style="width:60%;"></div></div>
+          </div>
+          <div class="skill">
+            <img src="assets/images/icons/django.svg" alt="Django" />
+            <span>MariaDB</span>
+            <p class="skill-desc">Python 기반 BE 설계</p>
+            <div class="skill-bar"><div class="skill-level" style="width:50%;"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DevOps
       <div class="skills-category">
         <h3>DevOps</h3>
         <div class="skills-grid">
@@ -433,63 +538,7 @@
             <div class="skill-bar"><div class="skill-level" style="width:50%;"></div></div>
           </div>
         </div>
-      </div>
-
-      <!-- Web Development -->
-      <div class="skills-category">
-        <h3>Web Development</h3>
-        <div class="skills-grid">
-          <div class="skill">
-            <img src="assets/images/icons/fastapi.svg" alt="FastAPI" />
-            <span>FastAPI</span>
-            <p class="skill-desc">Python 기반 BE 설계</p>
-            <div class="skill-bar"><div class="skill-level" style="width:60%;"></div></div>
-          </div>
-          <div class="skill">
-            <img src="assets/images/icons/mariadb.svg" alt="MariaDB" />
-            <span>MariaDB</span>
-            <p class="skill-desc">RDB 관리</p>
-            <div class="skill-bar"><div class="skill-level" style="width:50%;"></div></div>
-          </div>
-          <div class="skill">
-            <img src="assets/images/icons/nginx.svg" alt="Nginx" />
-            <span>Nginx</span>
-            <p class="skill-desc">웹 서버 및 리버스 프록시</p>
-            <div class="skill-bar"><div class="skill-level" style="width:50%;"></div></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Infrastructure -->
-      <div class="skills-category">
-        <h3>Infrastructure</h3>
-        <div class="skills-grid">
-          <div class="skill">
-            <img src="assets/images/icons/aws.svg" alt="AWS" />
-            <span>AWS</span>
-            <p class="skill-desc">클라우드 구축 및 관리</p>
-            <div class="skill-bar"><div class="skill-level" style="width:70%;"></div></div>
-          </div>
-          <div class="skill">
-            <img src="assets/images/icons/gcp.svg" alt="GCP" />
-            <span>GCP</span>
-            <p class="skill-desc">클라우드 구축 및 관리</p>
-            <div class="skill-bar"><div class="skill-level" style="width:40%;"></div></div>
-          </div>
-          <div class="skill">
-            <img src="assets/images/icons/terraform.svg" alt="Terraform" />
-            <span>Terraform</span>
-            <p class="skill-desc">IaC를 통한 인프라 자동화</p>
-            <div class="skill-bar"><div class="skill-level" style="width:30%;"></div></div>
-          </div>
-          <div class="skill">
-            <img src="assets/images/icons/k6.svg" alt="k6" />
-            <span>k6</span>
-            <p class="skill-desc">성능 테스트 및 모니터링</p>
-            <div class="skill-bar"><div class="skill-level" style="width:20%;"></div></div>
-          </div>
-        </div>
-      </div>
+      </div> -->
 
       <!-- Collaboration Tools -->
       <div class="skills-category">
@@ -532,10 +581,10 @@
         <table class="work-table">
           <tbody>
             <tr>
-              <td class="work-period">2021/08/02 ~ 2022/03/01</td>
+              <td class="work-period">2023. 09. 04 ~ 2023. 12. 01</td>
               <td>
-                <div class="work-place">앰코테크놀로지코리아 IT, QA 부서 (주임)</div>
-                <div class="work-desc">파이썬을 통한 사무자동화 지원</div>
+                <div class="work-place">스마일게이트 홀딩스, 데이터 분석팀 (아르바이트)</div>
+                <div class="work-desc">분석 및 학습용 데이터셋 구축</div>
               </td>
             </tr>
           </tbody>
@@ -552,16 +601,23 @@
         <table class="education-table">
           <tbody>
             <tr>
-              <td class="edu-period">2016/03/02 ~ 2022/02/18</td>
+              <td class="edu-period">2024/07/02 ~ 2025/06/30</td>
               <td>
-                <div class="edu-school">인천대학교 임베디드시스템공학과</div>
+                <div class="edu-school">삼성청년SW·AI아카데미 12기</div>
+                <div class="edu-desc">1학기: Data Track<br>2학기: 7주간 6인 팀 프로젝트 3회</div>
               </td>
             </tr>
             <tr>
-              <td class="edu-period">2024/07/01 ~ 2025/06/30</td>
+              <td class="edu-period">2023/05/08 ~ 2023/08/01</td>
               <td>
-                <div class="edu-school">삼성청년SW·AI아카데미</div>
-                <div class="edu-desc">1학기: Data Track<br>2학기: 7주간 6인 팀 프로젝트 3회</div>
+                <div class="edu-school">경기도미래기술학교 </br> 빅데이터 분석 전문가 1기</div>
+                <div class="edu-desc"></div>
+              </td>
+            </tr>
+            <tr>
+              <td class="edu-period">2017/03/02 ~ 2022/02/18</td>
+              <td>
+                <div class="edu-school">남서울대학교 컴퓨터소프트웨어학과</div>
               </td>
             </tr>
           </tbody>
@@ -581,33 +637,34 @@
               <th>자격증</th>
               <th>급수/점수</th>
               <th>취득일</th>
+              <th>발급처</th>
             </tr>
           </thead>
           <tbody>
+
             <tr>
-              <td>리눅스마스터</td>
-              <td>2급</td>
-              <td>25.03.28</td>
+              <td>OPIC</td>
+              <td>IH</td>
+              <td>25.01.27</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>TOEIC</td>
+              <td>675</td>
+              <td>25.02.09</td>
+              <td>YBM</td>
             </tr>
             <tr>
               <td>SQLD</td>
               <td>-</td>
               <td>24.09.20</td>
+              <td>한국데이터산업진흥원</td>
             </tr>
             <tr>
-              <td>OPIC</td>
-              <td>IH</td>
-              <td>25.01.27</td>
-            </tr>
-            <tr>
-              <td>TOEIC</td>
-              <td>785</td>
-              <td>25.02.09</td>
-            </tr>
-            <tr>
-              <td>JLPT</td>
-              <td>N3</td>
-              <td>24.12.01</td>
+              <td>정보처리기사</td>
+              <td>-</td>
+              <td>22.11.25</td>
+              <td>한국산업인력공단</td>
             </tr>
           </tbody>
         </table>
